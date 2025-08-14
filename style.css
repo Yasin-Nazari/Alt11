@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Kaushan+Script&family=Playwrite+MX+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Castoro+Titling&family=Kaushan+Script&family=Playwrite+MX+Guides&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Castoro+Titling&family=Kaushan+Script&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+MX+Guides&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Caprasimo&family=Castoro+Titling&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+MX+Guides&family=Poiret+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background: linear-gradient(to bottom, #000125, #023e8a );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+.logo h1{
+    font-family: Parisienne;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.nav-list{
+    width: 80%;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0 150px;
+}
+
+.nav-list ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-family: Castoro Titling;
+    font-size: larger;
+    font-weight: bolder;
+    transition: transform 0.4s ease;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.nav-list ul li a:hover{
+    transform: scale(1.2);
+}
+
+.head-background{
+    background: url(./image/Background\ Wallpaper\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-background h1{
+    color: white;
+    font-size: 100px;
+    font-family: Parisienne;
+    margin-top: 50px;
+}
+
+.head-background p{
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Poiret One";
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.head-background button{
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    margin-top: 50px;
+    font-family: "Kaushan Script";
+    font-size: xx-large;
+    box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.4);
+    background-color: #7b2cbf;
+    color: white;
+    transition: transform 0.4s ease background-color 0.4s;
+}
+
+.head-background button:hover{
+    transform: scale(1.2);
+    background-color: #b25bfd;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient( #000125, #023e8a );
+    width: 100%;
+    height: 100vh;
+}
+
+.info h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: Castoro Titling;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.info ul li{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.info ul li img{
+    margin: 20px;
+}
+
+.info p{
+    color: white;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: "Playwrite AU QLD";
+}
+
+.brands{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background: radial-gradient( #000125, #023e8a );
+}
+
+.brands h1{
+    color: white;
+    font-size: 50px;
+    font-family: "Poiret One";
+    text-transform: uppercase;
+    margin: 50px;
+}
+
+.brands ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 152px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: white;
+    transition: transform 0.4s ease;
+}
+
+.brands ul li:hover{
+    transform: scale(1.2);
+}
+
+.brands ul li img{
+    width: 150px;
+    filter: invert(0);
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient( #000125, #023e8a );
+}
+.clothes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clothes h1{
+    color: white;
+    font-family: "Poiret One";
+    font-size: 50px;
+    margin: 80px 10px;
+    text-transform: uppercase;
+}
+.clothes ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clothes ul .list-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    transition: transform 0.4s ease;
+}
+
+.clothes ul li:hover{
+    transform: scale(1.1);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.card-image img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body h3{
+    font-size: xx-large;
+    font-family: "Poiret One";
+    font-weight: bold;
+    margin: 15px;
+}
+
+.text{
+    text-align: left;
+    font-family: Orbitron;
+    font-weight: bold;
+    margin: 10px 0 10px 30px;
+}
+.price{
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px;
+}
+.card ul{
+    margin-bottom: 15px;
+}
+
+.card-body ul li{
+    list-style: none;
+}
+
+.card button{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: "Kaushan Script";
+    border: 0;
+    background-color: #7b2cbf;
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.4s ease;
+}
+.card button:hover{
+    background-color: #00b4d8;
+}
+
+.card-image2 img{
+    width: 300px;
+    height: 379px;
+    border-radius: 20px;
+}
+
+.card-image2 img{
+    width: 300px;
+    height: 379px;
+    border-radius: 20px;
+}
+
+.card-image2 img{
+    width: 300px;
+    height: 379px;
+    border-radius: 20px;
+}
+
+.shoes h1{
+    color: white;
+    font-family: "Poiret One";
+    font-size: 50px;
+    margin: 80px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background: radial-gradient( #000125, #023e8a );
+}
+
+.banner ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: Castoro Titling;
+}
+.banner ul li img{
+    margin: 20px;
+}
+
+.step-foot{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-foot h1{
+    font-size: 120px;
+    font-family: Parisienne;
+    margin: 100px 0 30px 0;
+}
+
+.step-foot p{
+    font-family: "Poiret One";
+    font-weight: bold;
+    font-size: 40px;
+    margin: 20px;
+}
+
+.step-foot ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-foot ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    height: 50px;
+    width: 220px;
+}
+
+.step-foot ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.footer{
+    background: radial-gradient( #000125, #023e8a );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 24vh;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease;
+}
+
+.footer ul li:hover{
+    transform: scale(1.2);
+}
+
+.footer ul li a{
+    color: white;
+    margin: 25px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.design{
+    color: white;
+    text-transform: uppercase;
+    font-family: "Orbitron"
+}
+
+.design img{
+    margin: 20px;
+}
